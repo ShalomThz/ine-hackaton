@@ -1,0 +1,55 @@
+Exactitud del árbol (profundidad 4): 83.2%
+
+Importancia de variables:
+brecha_pres_int      0.420
+part_media           0.281
+volatilidad          0.196
+tendencia_pp_anio    0.103
+
+Reglas:
+|--- brecha_pres_int <= 9.71
+|   |--- tendencia_pp_anio <= 0.58
+|   |   |--- part_media <= 40.02
+|   |   |   |--- brecha_pres_int <= 6.99
+|   |   |   |   |--- class: 2
+|   |   |   |--- brecha_pres_int >  6.99
+|   |   |   |   |--- class: 4
+|   |   |--- part_media >  40.02
+|   |   |   |--- tendencia_pp_anio <= 0.40
+|   |   |   |   |--- class: 2
+|   |   |   |--- tendencia_pp_anio >  0.40
+|   |   |   |   |--- class: 2
+|   |--- tendencia_pp_anio >  0.58
+|   |   |--- part_media <= 47.53
+|   |   |   |--- part_media <= 43.83
+|   |   |   |   |--- class: 4
+|   |   |   |--- part_media >  43.83
+|   |   |   |   |--- class: 4
+|   |   |--- part_media >  47.53
+|   |   |   |--- volatilidad <= 5.89
+|   |   |   |   |--- class: 2
+|   |   |   |--- volatilidad >  5.89
+|   |   |   |   |--- class: 1
+|--- brecha_pres_int >  9.71
+|   |--- part_media <= 55.78
+|   |   |--- volatilidad <= 12.09
+|   |   |   |--- part_media <= 50.73
+|   |   |   |   |--- class: 4
+|   |   |   |--- part_media >  50.73
+|   |   |   |   |--- class: 4
+|   |   |--- volatilidad >  12.09
+|   |   |   |--- volatilidad <= 12.62
+|   |   |   |   |--- class: 3
+|   |   |   |--- volatilidad >  12.62
+|   |   |   |   |--- class: 3
+|   |--- part_media >  55.78
+|   |   |--- brecha_pres_int <= 18.54
+|   |   |   |--- tendencia_pp_anio <= 0.02
+|   |   |   |   |--- class: 2
+|   |   |   |--- tendencia_pp_anio >  0.02
+|   |   |   |   |--- class: 1
+|   |   |--- brecha_pres_int >  18.54
+|   |   |   |--- brecha_pres_int <= 19.53
+|   |   |   |   |--- class: 3
+|   |   |   |--- brecha_pres_int >  19.53
+|   |   |   |   |--- class: 3

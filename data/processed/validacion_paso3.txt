@@ -1,0 +1,62 @@
+== 1. CCPC ==
+Filas cargadas: 2,389,546
+Participación nacional por elección (compárese con el tablero del INE):
+             LN        SV        NV       NS  part_SV_LN_%  part_SV_SVNV_%
+AELEC                                                                     
+2009   77481831  33316974  42298963  1865894          43.0            44.1
+2012   76490962  47383154  28939159   168649          61.9            62.1
+2015   83563462  36926612  41517874  5118976          44.2            47.1
+2018   89123997  51784399  31249856  6089742          58.1            62.4
+2021   93532133  46389189  43099624  4043320          49.6            51.8
+2024   98330348  54899228  37105466  6325654          55.8            59.7
+Lista nominal no binaria excluida (SEXO=2, solo 2024): 105
+
+== 1a. Chiapas: reasignación de claves INE de 2018 a claves 2021/2024 ==
+{120: 122, 121: 123, 122: 121, 123: 119, 124: 120}
+
+== 1b. Michoacán claves 65/66, lista nominal por elección ==
+MPIOCVE     65     66
+AELEC                
+2009     17925  23519
+2012     17376  22975
+2015     17596  23630
+2018     18399  25430
+2021     19051  27223
+2024     20136  28648
+Decisión: las claves son consistentes; solo los nombres de 2021 estaban invertidos.
+
+== 2. Celdas municipio x sexo x grupo de edad ==
+Celdas totales: 29,724
+Excluidas por tener menos de 5 elecciones: 253
+Excluidas por lista nominal menor a 30 en alguna elección: 873
+Celdas que quedan: 28,598 (representan 97,991,874 personas en la LN 2024)
+
+== 3. Equivalencias INE -> INEGI ==
+Correcciones manuales aplicadas: 6 | sin clave INEGI: 0 | claves INEGI duplicadas: 0
+
+== 4. Contexto municipal ==
+Intercensal 2025: 2,478 municipios
+IMM 2020 sin empate: 9 municipios
+CONEVAL 2020: 2,469 municipios leídos, sin empate: 12
+ITER 2020 sin empate: 9 municipios
+indice_conectividad: varianza explicada 66.0%; cargas {'internet': np.float64(0.47), 'computadora': np.float64(0.51), 'celular': np.float64(0.43), 'telefono_fijo': np.float64(0.45), 'tv_paga': np.float64(0.35)}; imputados con mediana: 7
+indice_socioeconomico: varianza explicada 62.6%; cargas {'escolaridad': np.float64(0.42), 'indice_marginacion': np.float64(0.44), 'pobreza': np.float64(-0.43), 'carencia_seg_social': np.float64(-0.38), 'inseg_alimentaria': np.float64(-0.14), 'piso_tierra': np.float64(-0.35), 'ocup_ingreso_menor_2sm': np.float64(-0.41)}; imputados con mediana: 18
+
+== 5. Base final ==
+Filas: 28,598 | municipios: 2,435
+Filas sin contexto Intercensal: 69
+Participación media por grupo de edad y sexo (%):
+sexo        Hombres  Mujeres
+grupo_edad                  
+18-24          46.3     56.8
+25-34          43.8     57.6
+35-44          54.6     66.3
+45-59          63.4     70.4
+60-74          70.2     69.7
+75+            58.7     50.7
+Participación media por región (%):
+region
+Centro          60.9
+Centro-Norte    57.5
+Norte           59.7
+Sur             58.7
